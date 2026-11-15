@@ -601,17 +601,19 @@ const Router = {
                   <div class="kit-card-img-wrap">
                     <img src="${k.image_url}" class="kit-card-img" alt="${k.name}" onerror="this.onerror=null; this.src='/images/kits/arjun_kit.svg';">
                     <span class="kit-char-badge">${k.character_name} by COFOCO</span>
-                    <span class="kit-stock-badge ${k.is_in_stock ? 'stock-in' : 'stock-out'}">
-                      ${k.is_in_stock ? `${k.sellable_kits} In Stock` : 'Out of Stock'}
-                    </span>
                   </div>
                   <div class="kit-card-body">
                     <h3 class="kit-card-title">${k.name}</h3>
                     <div class="kit-card-subtitle">${k.subtitle}</div>
                     
                     <div class="kit-price-row">
-                      <span class="kit-price">₹${Number(k.base_price).toLocaleString('en-IN')}</span>
-                      <span class="kit-mrp">₹${Number(k.mrp).toLocaleString('en-IN')}</span>
+                      <div style="display: flex; align-items: baseline; gap: 0.6rem;">
+                        <span class="kit-price">₹${Number(k.base_price).toLocaleString('en-IN')}</span>
+                        <span class="kit-mrp">₹${Number(k.mrp).toLocaleString('en-IN')}</span>
+                      </div>
+                      <span class="kit-stock-badge ${k.is_in_stock ? 'stock-in' : 'stock-out'}" style="position: static;">
+                        ${k.is_in_stock ? `${k.sellable_kits} In Stock` : 'Out of Stock'}
+                      </span>
                     </div>
 
                     <div class="kit-actions-grid">
@@ -1463,16 +1465,18 @@ const Router = {
                 <div class="kit-card-img-wrap">
                   <img src="${k.image_url}" class="kit-card-img" alt="${k.name}" onerror="this.onerror=null; this.src='/images/kits/arjun_kit.svg';">
                   <span class="kit-char-badge">${k.character_name} by COFOCO</span>
-                  <span class="kit-stock-badge ${k.is_in_stock ? 'stock-in' : 'stock-out'}">
-                    ${k.is_in_stock ? `${k.sellable_kits} In Stock` : 'Out of Stock'}
-                  </span>
                 </div>
                 <div class="kit-card-body">
                   <h3 class="kit-card-title">${k.name}</h3>
                   <div class="kit-card-subtitle">${k.subtitle}</div>
                   <div class="kit-price-row">
-                    <span class="kit-price">₹${Number(k.base_price).toLocaleString('en-IN')}</span>
-                    <span class="kit-mrp">₹${Number(k.mrp).toLocaleString('en-IN')}</span>
+                    <div style="display: flex; align-items: baseline; gap: 0.6rem;">
+                      <span class="kit-price">₹${Number(k.base_price).toLocaleString('en-IN')}</span>
+                      <span class="kit-mrp">₹${Number(k.mrp).toLocaleString('en-IN')}</span>
+                    </div>
+                    <span class="kit-stock-badge ${k.is_in_stock ? 'stock-in' : 'stock-out'}" style="position: static;">
+                      ${k.is_in_stock ? `${k.sellable_kits} In Stock` : 'Out of Stock'}
+                    </span>
                   </div>
                   <div class="kit-actions-grid">
                     <a href="#/kit/${k.slug}" class="btn btn-secondary btn-sm">View Details</a>

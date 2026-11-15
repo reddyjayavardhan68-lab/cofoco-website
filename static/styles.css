@@ -894,6 +894,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   position: relative;
   background: radial-gradient(circle at center, #241F18 0%, #15120E 100%);
   border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
 }
 .kit-card-img {
   width: 100%;
@@ -971,7 +972,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .kit-price-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 0.75rem;
   margin-bottom: 1.25rem;
   margin-top: auto;
