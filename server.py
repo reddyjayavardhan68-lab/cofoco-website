@@ -1774,22 +1774,30 @@ class CofocoRequestHandler(BaseHTTPRequestHandler):
 def run_server():
     init_db()
     seed_db()
-    ports = [8080, 8888]
+    
+    # Read dynamic port from cloud host environment (Render, Railway, Heroku) or default to 8080 & 8888
+    env_port = os.environ.get("PORT")
+    if env_port:
+        ports = [int(env_port)]
+    else:
+        ports = [8080, 8888]
+        
     servers = []
-    import time
-
+    host = "0.0.0.0"
+    
     print(f"===============================================================")
-    print(f"  COFOCO E-COMMERCE SERVER ONLINE (Dual Ports: 8080 & 8888)")
+    print(f"  COFOCO E-COMMERCE SERVER ONLINE (Host: {host}, Ports: {ports})")
     for p in ports:
         try:
-            srv = ThreadedHTTPServer(("127.0.0.1", p), CofocoRequestHandler)
+            srv = ThreadedHTTPServer((host, p), CofocoRequestHandler)
             servers.append(srv)
             t = threading.Thread(target=srv.serve_forever, daemon=True)
             t.start()
-            print(f"  ✓ Active on http://127.0.0.1:{p}/")
+            print(f"  ✓ Active on http://{host}:{p}/")
         except Exception as e:
             print(f"  ⚠ Port {p} unavailable: {e}")
-    print(f"  Admin Portal: http://127.0.0.1:8080/#/admin")
+    print(f"  Storefront: http://localhost:{ports[0]}/")
+    print(f"  Admin Portal: http://localhost:{ports[0]}/#/admin")
     print(f"===============================================================")
     try:
         while True:
