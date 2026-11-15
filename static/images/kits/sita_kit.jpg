@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad_Sita" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16221A"/>
+      <stop offset="50%" stop-color="#25382B"/>
+      <stop offset="100%" stop-color="#0A0806"/>
+    </linearGradient>
+
+    <!-- Metallic Gold Foil Gradient -->
+    <linearGradient id="goldFoil_Sita" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFF2D6"/>
+      <stop offset="35%" stop-color="#E5BA63"/>
+      <stop offset="70%" stop-color="#C29541"/>
+      <stop offset="100%" stop-color="#8B6724"/>
+    </linearGradient>
+
+    <!-- Radial Core Glow -->
+    <radialGradient id="coreGlow_Sita" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#E5BA63" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#A3C9AE" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer Rounded Container -->
+  <rect width="400" height="420" rx="20" fill="url(#bgGrad_Sita)"/>
+
+  <!-- Hairline Gold Luxury Border -->
+  <rect x="10" y="10" width="380" height="400" rx="16" fill="none" stroke="url(#goldFoil_Sita)" stroke-width="1.2" opacity="0.85"/>
+
+  <!-- Radial Aura Glow behind emblem -->
+  <circle cx="200" cy="150" r="120" fill="url(#coreGlow_Sita)"/>
+
+  <!-- Corner Filigree Ornaments -->
+  <path d="M 22 36 L 36 22 M 22 22 L 36 36" stroke="#E5BA63" stroke-width="1" opacity="0.6"/>
+  <path d="M 378 36 L 364 22 M 378 22 L 364 36" stroke="#E5BA63" stroke-width="1" opacity="0.6"/>
+  <path d="M 22 384 L 36 398 M 22 398 L 36 384" stroke="#E5BA63" stroke-width="1" opacity="0.6"/>
+  <path d="M 378 384 L 364 398 M 378 398 L 364 384" stroke="#E5BA63" stroke-width="1" opacity="0.6"/>
+
+  <!-- Top Brand Seal -->
+  <text x="200" y="44" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="700" fill="url(#goldFoil_Sita)" letter-spacing="3.5">CONSCIOUS FORM COMPANY</text>
+  <line x1="80" y1="52" x2="320" y2="52" stroke="url(#goldFoil_Sita)" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Central Archetype Icon & Crest -->
+  
+            <!-- Sacred Lotus Motif -->
+            <path d="M 200,95 C 180,130 185,170 200,190 C 215,170 220,130 200,95 Z" fill="#A3C9AE" opacity="0.4" stroke="#E5BA63" stroke-width="1.8"/>
+            <path d="M 200,190 C 160,185 140,150 155,125 C 170,145 185,170 200,190 Z" fill="none" stroke="#E5BA63" stroke-width="2"/>
+            <path d="M 200,190 C 240,185 260,150 245,125 C 230,145 215,170 200,190 Z" fill="none" stroke="#E5BA63" stroke-width="2"/>
+            <ellipse cx="200" cy="195" rx="55" ry="8" fill="none" stroke="#A3C9AE" stroke-width="1.5" stroke-dasharray="2 4"/>
+        
+
+  <!-- Character & Quality Banner -->
+  <rect x="110" y="215" width="180" height="22" rx="11" fill="rgba(10, 8, 6, 0.7)" stroke="url(#goldFoil_Sita)" stroke-width="1"/>
+  <text x="200" y="230" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#E5BA63" letter-spacing="2">SITA • STEADINESS</text>
+
+  <!-- Kit Title Display -->
+  <text x="200" y="262" text-anchor="middle" font-family="'Playfair Display', serif" font-size="16" font-weight="700" font-style="italic" fill="#FFFFFF">The Lotus Restoration Kit</text>
+
+  <!-- Included Items Specification -->
+  
+        <g transform="translate(36, 280)">
+            <rect width="328" height="21" rx="4" fill="rgba(10, 8, 6, 0.65)" stroke="rgba(229, 186, 99, 0.25)" stroke-width="0.8"/>
+            <circle cx="12" cy="10.5" r="3" fill="#E5BA63"/>
+            <text x="24" y="14.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#EDE4D8">Natural Organic Cork & Rubber Mat</text>
+        </g>
+        
+        <g transform="translate(36, 306)">
+            <rect width="328" height="21" rx="4" fill="rgba(10, 8, 6, 0.65)" stroke="rgba(229, 186, 99, 0.25)" stroke-width="0.8"/>
+            <circle cx="12" cy="10.5" r="3" fill="#E5BA63"/>
+            <text x="24" y="14.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#EDE4D8">Therapeutic Acupressure Mat & Pillow</text>
+        </g>
+        
+        <g transform="translate(36, 332)">
+            <rect width="328" height="21" rx="4" fill="rgba(10, 8, 6, 0.65)" stroke="rgba(229, 186, 99, 0.25)" stroke-width="0.8"/>
+            <circle cx="12" cy="10.5" r="3" fill="#E5BA63"/>
+            <text x="24" y="14.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#EDE4D8">Botanical Magnesium Sleep Mist</text>
+        </g>
+        
+        <g transform="translate(36, 358)">
+            <rect width="328" height="21" rx="4" fill="rgba(10, 8, 6, 0.65)" stroke="rgba(229, 186, 99, 0.25)" stroke-width="0.8"/>
+            <circle cx="12" cy="10.5" r="3" fill="#E5BA63"/>
+            <text x="24" y="14.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#EDE4D8">Multi-Loop Stretch Therapy Strap</text>
+        </g>
+        
+
+  <!-- Subtle Bottom Quality Seal -->
+  <text x="200" y="398" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600" fill="#E5BA63" opacity="0.8" letter-spacing="1.5">CALIBRATED GYM &amp; RECOVERY KIT</text>
+</svg>

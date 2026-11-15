@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBhm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B2219" />
+      <stop offset="100%" stop-color="#1F110B" />
+    </linearGradient>
+    <linearGradient id="mntnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EADCC9" />
+      <stop offset="40%" stop-color="#C08A5E" />
+      <stop offset="100%" stop-color="#7D4F38" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="24" fill="url(#bgBhm)"/>
+  <!-- Earth Sun disk -->
+  <circle cx="200" cy="160" r="110" fill="#C08A5E" opacity="0.25"/>
+  <!-- Heavy Mountain Peaks (Geometric Strength) -->
+  <polygon points="200,70 330,320 70,320" fill="url(#mntnGrad)"/>
+  <polygon points="200,70 200,320 330,320" fill="#7D4F38" opacity="0.6"/>
+  <!-- Secondary Peaks -->
+  <polygon points="120,160 210,320 30,320" fill="#3B2219" opacity="0.85"/>
+  <polygon points="280,180 370,320 190,320" fill="#2A1710" opacity="0.9"/>
+  <!-- Strength Lines -->
+  <line x1="80" y1="340" x2="320" y2="340" stroke="#EADCC9" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="352" x2="280" y2="352" stroke="#C08A5E" stroke-width="2" stroke-linecap="round"/>
+  <!-- Text Label -->
+  <text x="200" y="380" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EADCC9" letter-spacing="4">BHEEMA • STRENGTH</text>
+</svg>

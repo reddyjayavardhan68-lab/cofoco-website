@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSvt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#232A1C" />
+      <stop offset="100%" stop-color="#11160D" />
+    </linearGradient>
+    <linearGradient id="oliveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECF0E7" />
+      <stop offset="50%" stop-color="#879A63" />
+      <stop offset="100%" stop-color="#4F5D38" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="24" fill="url(#bgSvt)"/>
+  <!-- Continuum Habit Infinite Loop (Daily Dedication) -->
+  <g transform="translate(200, 180)">
+    <path d="M -60,0 C -60,-45 -25,-45 0,0 C 25,45 60,45 60,0 C 60,-45 25,-45 0,0 C -25,45 -60,45 -60,0 Z"
+          fill="none" stroke="url(#oliveGrad)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#4F5D38" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.6"/>
+    <!-- Olive Leaves of Growth -->
+    <path d="M -80,-50 C -60,-60 -50,-40 -70,-30 Z" fill="#879A63"/>
+    <path d="M 80,50 C 60,60 50,40 70,30 Z" fill="#879A63"/>
+    <path d="M 0,-85 C 15,-100 25,-85 10,-75 Z" fill="#ECF0E7"/>
+  </g>
+  <!-- Text Label -->
+  <text x="200" y="375" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ECF0E7" letter-spacing="4">SAVITRI • CONSISTENCY</text>
+</svg>
